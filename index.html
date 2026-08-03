@@ -3,137 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fan Yao — PhD candidate in heterogeneous catalysis and operando spectroscopy.">
+  <meta name="description" content="Fan Yao — PhD candidate in heterogeneous catalysis, operando spectroscopy, catalyst reconstruction, and defect chemistry.">
+  <meta name="author" content="Fan Yao">
+  <meta property="og:title" content="Fan Yao | Academic Homepage">
+  <meta property="og:description" content="Research on dynamic catalyst evolution, operando spectroscopy, oxygen-vacancy chemistry, and CO₂ conversion.">
+  <meta property="og:image" content="https://fanyao.ch/assets/portrait.jpg">
+  <meta property="og:url" content="https://fanyao.ch">
+  <meta name="theme-color" content="#102A43">
   <title>Fan Yao | Academic Homepage</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+
+<body class="home-page">
   <header class="site-header">
-    <div class="top-gradient"></div>
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html">FAN YAO</a>
-      <div class="header-actions">
-        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
-          <span class="theme-icon" aria-hidden="true">☀️</span>
-        </button>
-        <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
-      </div>
-      <nav class="nav-links">
-        <a href="#about">ABOUT ME</a>
-        <a href="publications.html">PUBLICATIONS</a>
-        <a href="research.html">RESEARCH</a>
-        <a href="#awards">AWARDS</a>
-        <a href="activities.html">ACADEMIC ACTIVITIES</a>
-        <a href="hobbies.html">HOBBIES</a>
+    <div class="container header-inner">
+      <a class="site-brand" href="index.html">Fan Yao</a>
+
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="#about">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="research.html">Research</a>
+        <a href="awards.html">Awards</a>
+        <a href="activities.html">Academic Activities</a>
+        <a href="hobbies.html">Interests</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="about">
       <div class="container hero-grid">
-        <div class="portrait-wrap">
-          <img src="assets/portrait.jpg" alt="Portrait of Fan Yao">
+        <div class="portrait-column reveal">
+          <img class="portrait" src="assets/portrait.jpg" alt="Portrait of Fan Yao">
         </div>
-        <div class="hero-copy">
-          <h1>Hello! This is Fan Yao.</h1>
-          <p>I am a PhD candidate in Power Engineering and Engineering Thermophysics at Zhejiang University, and a visiting PhD researcher at the Paul Scherrer Institute.</p>
-          <div class="hero-buttons">
-            <a href="assets/Fan_Yao_CV.pdf" target="_blank">Curriculum Vitae</a>
+
+        <div class="intro-column reveal">
+          <p class="kicker">Heterogeneous Catalysis · Operando Spectroscopy</p>
+          <h1>Fan Yao</h1>
+          <p class="role">PhD Candidate at Zhejiang University · Visiting PhD Researcher at Paul Scherrer Institute</p>
+          <p class="intro">
+            I study how catalysts evolve under realistic reaction conditions. My work combines
+            catalyst synthesis, operando spectroscopy, in situ characterization, and mechanistic
+            analysis to understand oxygen vacancies, metal exsolution, surface reconstruction,
+            and interfacial redox chemistry.
+          </p>
+
+          <div class="contact-links">
+            <a href="assets/Fan_Yao_CV.pdf" target="_blank" rel="noopener">CV</a>
             <a href="mailto:fan.yao@psi.ch">Email</a>
-            <a href="https://orcid.org/0000-0003-0212-7075" target="_blank">ORCID</a>
-            <a class="linkedin-button" href="https://www.linkedin.com/in/fan-yao-b2b4813a5/" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3.5A2.2 2.2 0 1 1 5.2 8a2.2 2.2 0 0 1 0-4.5ZM3.3 9.5h3.8V21H3.3V9.5Zm6.1 0H13v1.6h.1c.5-.9 1.7-2 3.6-2 3.9 0 4.6 2.5 4.6 5.8V21h-3.8v-5.4c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21H9.4V9.5Z"/></svg>
-              LinkedIn
-            </a>
+            <a href="https://orcid.org/0000-0003-0212-7075" target="_blank" rel="noopener">ORCID</a>
+            <a href="https://www.linkedin.com/in/fan-yao-b2b4813a5/" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section reveal-section" id="about">
-      <div class="container content-width">
-        <div class="section-rule"></div>
-        <h2>Academic Background</h2>
-
-        <div class="timeline-block">
-          <h3>September 2023 – Present</h3>
-          <ul>
-            <li>PhD Candidate, School of Energy Engineering, Zhejiang University.</li>
-            <li>Major: Power Engineering and Engineering Thermophysics.</li>
-            <li>Supervisor: Prof. Shengyong Lu.</li>
-          </ul>
+    <section class="section">
+      <div class="container panel academic-panel reveal">
+        <div class="section-heading">
+          <p class="section-label">Academic Background</p>
+          <h2>Education and research appointments</h2>
         </div>
 
-        <div class="timeline-block">
-          <h3>December 2025 – Present</h3>
-          <ul>
-            <li>Visiting PhD Researcher, Paul Scherrer Institute, Switzerland.</li>
-            <li>Group of Prof. Jeroen A. van Bokhoven.</li>
-            <li>Research on Cu exsolution, catalyst reconstruction, and CO₂ hydrogenation.</li>
-          </ul>
-        </div>
+        <div class="timeline">
+          <article>
+            <time>2023–Present</time>
+            <div>
+              <h3>PhD Candidate, Zhejiang University</h3>
+              <p>School of Energy Engineering · Power Engineering and Engineering Thermophysics</p>
+              <p>Supervisor: Prof. Shengyong Lu</p>
+            </div>
+          </article>
 
-        <div class="timeline-block">
-          <h3>September 2020 – July 2023</h3>
-          <ul>
-            <li>Master’s Degree, South China University of Technology.</li>
-            <li>Research on porous carbon materials and VOC adsorption.</li>
-          </ul>
-        </div>
+          <article>
+            <time>2025–Present</time>
+            <div>
+              <h3>Visiting PhD Researcher, Paul Scherrer Institute</h3>
+              <p>Group of Prof. Jeroen A. van Bokhoven</p>
+              <p>Cu exsolution, catalyst reconstruction, operando studies, and CO₂ hydrogenation</p>
+            </div>
+          </article>
 
-        <div class="timeline-block">
-          <h3>September 2016 – July 2020</h3>
-          <ul>
-            <li>Bachelor’s Degree in Environmental Engineering, China Jiliang University.</li>
-          </ul>
+          <article>
+            <time>2020–2023</time>
+            <div>
+              <h3>Master’s Degree, South China University of Technology</h3>
+              <p>Porous carbon materials, microbial nitrogen doping, and VOC adsorption</p>
+            </div>
+          </article>
+
+          <article>
+            <time>2016–2020</time>
+            <div>
+              <h3>Bachelor’s Degree, China Jiliang University</h3>
+              <p>Environmental Engineering</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="research">
-      <div class="container content-width">
-        <div class="section-rule"></div>
-        <h2>Research Interests</h2>
-        <p>My research focuses on understanding how heterogeneous catalysts dynamically evolve under realistic reaction conditions. I combine catalyst design, operando spectroscopy, advanced characterization, and mechanistic analysis to reveal the roles of oxygen vacancies, metal exsolution, interfacial redox processes, and surface reconstruction.</p>
-        <p>You can find detailed information about my work and activities on the following pages:</p>
+    <section class="section section-links">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">Explore</p>
+          <h2>Research, publications, and academic profile</h2>
+        </div>
 
-        <div class="feature-grid five">
-          <a class="feature-card" href="publications.html">
+        <div class="feature-grid">
+          <a class="feature-card reveal" href="publications.html">
             <img src="assets/Publications.jpg" alt="Publications">
-            <div><span>Publications</span></div>
+            <div class="feature-content">
+              <span class="feature-number">01</span>
+              <h3>Publications</h3>
+              <p>Selected first-author papers and complete publication list.</p>
+            </div>
           </a>
-          <a class="feature-card" href="research.html">
+
+          <a class="feature-card reveal" href="research.html">
             <img src="assets/Research.jpg" alt="Research">
-            <div><span>Research</span></div>
+            <div class="feature-content">
+              <span class="feature-number">02</span>
+              <h3>Research</h3>
+              <p>Current projects in dynamic catalysis, defect chemistry, and adsorption.</p>
+            </div>
           </a>
-          <a class="feature-card" href="awards.html">
+
+          <a class="feature-card reveal" href="awards.html">
             <img src="assets/Awards.jpg" alt="Awards">
-            <div><span>Awards</span></div>
+            <div class="feature-content">
+              <span class="feature-number">03</span>
+              <h3>Awards</h3>
+              <p>Scholarships, honours, and academic recognition.</p>
+            </div>
           </a>
-          <a class="feature-card" href="activities.html">
+
+          <a class="feature-card reveal" href="activities.html">
             <img src="assets/Activities.jpg" alt="Academic Activities">
-            <div><span>Academic Activities</span></div>
+            <div class="feature-content">
+              <span class="feature-number">04</span>
+              <h3>Academic Activities</h3>
+              <p>Conference contributions and oral presentations.</p>
+            </div>
           </a>
-          <a class="feature-card" href="hobbies.html">
-            <img src="assets/Hobbies.jpg" alt="Interests and Hobbies">
-            <div><span>Interests &amp; Hobbies</span></div>
+
+          <a class="feature-card reveal" href="hobbies.html">
+            <img src="assets/portrait.jpg" alt="Interests and Hobbies">
+            <div class="feature-content">
+              <span class="feature-number">05</span>
+              <h3>Interests</h3>
+              <p>Books, films, travel, photography, and life beyond research.</p>
+            </div>
           </a>
         </div>
       </div>
     </section>
-
-    
-
-    
-
-    
   </main>
 
-  <footer><div class="container footer-inner">© <span id="year"></span> Fan Yao</div></footer>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Fan Yao</p>
+      <p>Heterogeneous Catalysis · Operando Spectroscopy</p>
+    </div>
+  </footer>
+
   <script src="assets/script.js"></script>
 </body>
 </html>
