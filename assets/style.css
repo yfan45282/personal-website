@@ -31,3 +31,16 @@ footer{margin-top:35px;padding:24px 0;background:linear-gradient(90deg,#fff4c2,#
 
 @media(max-width:900px){.pub-layout{grid-template-columns:240px 1fr}.year-nav{display:none}.hero-grid{grid-template-columns:300px 1fr;gap:45px}.feature-grid.four{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.nav-links{position:fixed;inset:102px 0 auto;background:#fff;padding:18px;display:none;flex-direction:column}.nav-links.open{display:flex}.menu-button{display:block}.hero-grid{grid-template-columns:1fr}.portrait-wrap{max-width:300px;margin:auto}.hero-copy{text-align:center}.hero-buttons{margin:24px auto 0}.pub-header nav{display:none}.pub-layout{grid-template-columns:1fr}.profile-sidebar{position:static}.paper-card{grid-template-columns:1fr}.paper-card img{height:auto}.feature-grid.four{grid-template-columns:1fr 1fr}}
+
+.activity-card img{
+  height:150px;
+  object-fit:cover;
+  object-position:center;
+}
+.publication-heading span{
+  color:#6b737b;
+  font-size:.9rem;
+}
+@media(max-width:680px){
+  .activity-card img{height:auto;}
+}
