@@ -643,3 +643,48 @@ html[data-theme="dark"] .research-page .paper-card:hover{
     max-height:260px;
   }
 }
+
+
+/* V7 clean homepage navigation */
+.feature-grid.five{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:10px;
+  margin-top:30px;
+}
+.feature-grid.five .feature-card{
+  height:280px;
+}
+.feature-grid.five .feature-card div{
+  left:12px;
+  right:10px;
+  bottom:16px;
+}
+.feature-grid.five .feature-card span{
+  font-size:.92rem;
+  line-height:1.25;
+}
+@media(max-width:900px){
+  .feature-grid.five{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+@media(max-width:680px){
+  .feature-grid.five{
+    grid-template-columns:repeat(2,1fr);
+  }
+  .feature-grid.five .feature-card{
+    height:210px;
+  }
+  .feature-grid.five .feature-card:last-child{
+    grid-column:1/-1;
+  }
+}
+@media(max-width:420px){
+  .feature-grid.five{
+    grid-template-columns:1fr;
+  }
+  .feature-grid.five .feature-card:last-child{
+    grid-column:auto;
+  }
+}
