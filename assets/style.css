@@ -100,7 +100,7 @@ img{display:block;max-width:100%}
   grid-template-columns:320px minmax(0,1fr);
   gap:60px;
   align-items:center;
-  max-width:960px;
+  max-width:100%;
 }
 .portrait{
   width:260px;
@@ -594,9 +594,10 @@ html[data-theme="dark"] .paper-card:hover{background:#1B2833}
   .main-nav.open{display:flex}
   .main-nav a{padding:11px 12px;border-bottom:0}
   .hero{padding-top:54px}
-  .hero-grid{grid-template-columns:1fr;text-align:center;gap:28px}
+  .hero-grid{grid-template-columns:minmax(180px,320px) 1fr;text-align:left;gap:20px}
+  .portrait{width:240px;height:240px}
   .hero-actions{grid-template-columns:1fr;}
-  .intro{margin-inline:auto}
+  .intro{margin:0}
   .timeline{grid-template-columns:1fr}
   .feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .pub-layout{grid-template-columns:1fr;padding:20px 14px 50px}
