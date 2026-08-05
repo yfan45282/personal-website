@@ -564,8 +564,8 @@ html[data-theme="dark"] .paper-card:hover{background:#1B2833}
 /* Responsive */
 @media(max-width:1020px){
   .main-nav{gap:15px;font-size:.74rem}
-  .hero-grid{grid-template-columns:300px 1fr;gap:50px}
-  .portrait{width:280px;height:280px}
+  .hero-grid{grid-template-columns:320px minmax(0,1fr);gap:60px}
+  .portrait{width:260px;height:260px}
   .feature-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
   .pub-layout{grid-template-columns:230px minmax(0,1fr)}
   .year-nav{display:none}
@@ -594,8 +594,8 @@ html[data-theme="dark"] .paper-card:hover{background:#1B2833}
   .main-nav.open{display:flex}
   .main-nav a{padding:11px 12px;border-bottom:0}
   .hero{padding-top:54px}
-  .hero-grid{grid-template-columns:minmax(180px,320px) 1fr;text-align:left;gap:20px}
-  .portrait{width:240px;height:240px}
+  .hero-grid{grid-template-columns:320px minmax(0,1fr);text-align:left;gap:20px}
+  .portrait{width:260px;height:260px}
   .hero-actions{grid-template-columns:1fr;}
   .intro{margin:0}
   .timeline{grid-template-columns:1fr}
@@ -604,12 +604,12 @@ html[data-theme="dark"] .paper-card:hover{background:#1B2833}
   .profile-sidebar{position:static}
 }
 @media(max-width:560px){
-  .container{width:min(calc(100% - 24px),var(--max))}
-  .hero{padding:38px 0 28px}
-  .portrait{width:220px;height:220px}
-  .intro-column h1{font-size:3.1rem}
-  .role{font-size:.92rem}
-  .intro{text-align:left;font-size:.94rem}
+  .container{width:min(calc(100% - 40px),var(--max))}
+  .hero{padding:60px 0 40px}
+  .portrait{width:260px;height:260px}
+  .intro-column h1{font-size:5.2rem}
+  .role{font-size:1.04rem}
+  .intro{text-align:left;font-size:1.02rem}
   .hero-actions{gap:12px}
   .action-card{padding:16px 14px}
   .academic-panel{padding:24px 18px}
