@@ -625,3 +625,25 @@ html[data-theme="dark"] .paper-card:hover{background:#1B2833}
   *,*::before,*::after{transition:none!important}
   .reveal{opacity:1;transform:none}
 }
+
+/* Narrow-screen compromise: prevent horizontal overflow while keeping desktop-like sizes */
+@media(max-width:420px){
+  .hero-grid{
+    grid-template-columns:minmax(120px,40%) 1fr;
+    gap:12px;
+    align-items:start;
+  }
+  .portrait{
+    width:34vw;
+    height:34vw;
+    max-width:220px;
+    max-height:220px;
+  }
+  .intro-column h1{
+    font-size:clamp(2.4rem,5.6vw,4rem);
+    line-height:1.02;
+  }
+  .container{width:calc(100% - 32px)}
+  .feature-grid{grid-template-columns:1fr}
+  html,body{overflow-x:hidden}
+}
